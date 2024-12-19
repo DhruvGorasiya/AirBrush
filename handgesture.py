@@ -23,7 +23,6 @@ while cap.isOpened():
 
     results = hands.process(image)
 
-
     if results.multi_hand_landmarks:
         if len(results.multi_hand_landmarks) < 2:
             for hand_landmarks in results.multi_hand_landmarks:
